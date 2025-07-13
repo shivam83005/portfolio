@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/056679a829.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Shivam singh</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am currently pursuing a B.Tech in Computer science at Shri Ramswaroop Memorial College of Engineering and Management, with an expected graduation in 2026. Over the course of my academic journey, I discovered a strong passion for web development. This interest has driven me to focus my academic projects and internships on building user-friendly, responsive, and efficient web applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Educations</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Development</span><br>HTML, CSS, Javascript, React-JS</li>
+                            <li><span>Backend Development</span><br>Node-JS</li>
+                            <li><span>Database</span><br>MongoDB</li>
+                            <li><span>CS Fundamentals</span><br>DSA, DBMS, OOPS Concepts, OS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Data Science Tools<br></li>
+                            <li><span>2024</span><br>Solution Architecture Job Simulation<br></li>
+                            <li><span>2023</span><br>Big Data, IBM Cloud Essentials V3, Python101 for Data Science</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Class 10th- <br>ICSE</li>
+                            <li><span>2022</span><br>Class 12th- <br>ICSE</li>
+                            <li><span>2026</span><br>BTech CSE- <br>Shri Ramswaroop Memorial College Of Engineering & Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating visually appealing and user-friendly websites, combining layout, color, typography, and interactive elements to enhance the user experience. It involves both aesthetic design and technical skills to ensure functionality across devices.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>User interface (UI) design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience.</p>
+                    <a href="https://en.wikipedia.org/wiki/User_interface_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>AWS</h2>
+                    <p>Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis.</p>
+                    <a href="https://en.wikipedia.org/wiki/Amazon_Web_Services">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p class="para">The app connects you to the talented people aroud the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p class="para">The app connects you to differnt musics aroud the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p class="para">The app allows you to buy your favourite products from your Phones. Download it from play store.</p>
+                        <a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Shivamms830@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8303492772</p>
+                    <div class="social-icons">
+                        <a href=https://www.facebook.com/><i class="fa-brands fa-facebook"></i></a>
+                        <a href=https://x.com/?lang=en-in><i class="fa-brands fa-twitter"></i></a>
+                        <a href=https://www.instagram.com/><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Aditya Verma WebDev CV.pdf.pdf"  download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="chatbot">
+            <div id="chatbot-header">
+              <span>Chat with us</span>
+              <button id="close-chatbot">&times;</button>
+            </div>
+            <div id="chatbot-messages"></div>
+            <input type="text" id="chatbot-input" placeholder="Type a message..." />
+            <button id="chatbot-send">Send</button>
+          </div>
+          
+          <div id="chatbot-button">
+            <i class="fas fa-comments"></i>
+          </div>
+        <div class="copyright">
+            <p>copyright © Shivam.<i class="fa-solid fa-drum"></i></p>
+        </div>
+    </div>
+    
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links")
+    var tabcontents= document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+<script>
+    const chatbotButton = document.getElementById("chatbot-button");
+    const chatbot = document.getElementById("chatbot");
+    const closeChatbot = document.getElementById("close-chatbot");
+    const chatbotMessages = document.getElementById("chatbot-messages");
+    const chatbotInput = document.getElementById("chatbot-input");
+    const chatbotSend = document.getElementById("chatbot-send");
+
+    // Create an example message area
+    const chatbotExample = document.createElement("div");
+    chatbotExample.style.padding = "10px";
+    chatbotExample.style.margin = "10px";
+    chatbotExample.style.background = "#f8f9fa";
+    chatbotExample.style.border = "1px solid #ddd";
+    chatbotExample.style.borderRadius = "5px";
+    chatbotExample.style.color = "#333";
+    chatbotExample.style.fontSize = "14px";
+    chatbotExample.innerHTML = "Example questions:<br>- Hello<br>- What services do you offer?<br>- How can I contact you?";
+    chatbotMessages.appendChild(chatbotExample);
+  
+    chatbotButton.addEventListener("click", () => {
+      chatbot.style.display = "flex";
+    });
+  
+    closeChatbot.addEventListener("click", () => {
+      chatbot.style.display = "none";
+    });
+  
+    chatbotSend.addEventListener("click", () => {
+      let userMessage = chatbotInput.value.trim();
+      if (userMessage !== "") {
+        addMessage("You: " + userMessage, "user");
+        chatbotInput.value = "";
+        setTimeout(() => getBotResponse(userMessage), 1000);
+      }
+    });
+  
+    function addMessage(text, sender) {
+      let messageDiv = document.createElement("div");
+      messageDiv.textContent = text;
+      messageDiv.style.padding = "5px";
+      messageDiv.style.margin = "5px 0";
+      messageDiv.style.borderRadius = "5px";
+      messageDiv.style.width = "fit-content";
+      
+      if (sender === "user") {
+        messageDiv.style.background = "#007bff";
+        messageDiv.style.color = "#fff";
+        messageDiv.style.alignSelf = "flex-end";
+      } else {
+        messageDiv.style.background = "#ddd";
+        messageDiv.style.color = "#333";
+        messageDiv.style.alignSelf = "flex-start";
+      }
+  
+      chatbotMessages.appendChild(messageDiv);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+  
+    function getBotResponse(message) {
+      let response;
+      message = message.toLowerCase();
+      
+      if (message.includes("hello") || message.includes("hi")) {
+        response = "Hello! How can I assist you today?";
+      } else if (message.includes("services")) {
+        response = "We offer web development, mobile app development, AI solutions, and more!";
+      } else if (message.includes("contact")) {
+        response = "You can reach us at Shivamms830@gmail.com or call +9936987775.";
+      } else {
+        response = "I'm not sure, but our team would be happy to assist you!";
+      }
+  
+      addMessage("Bot: " + response, "bot");
+    }
+</script>
+
+  </script>
+</body>
+</html>
